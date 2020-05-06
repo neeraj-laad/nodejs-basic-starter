@@ -1,0 +1,10 @@
+{
+  "name": "nodejs-simple-project",
+  "version": "0.1.0",
+  "description": "Simple Node.js application",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node --inspect app.js"
+  }
+}
