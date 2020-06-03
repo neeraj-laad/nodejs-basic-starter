@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "debug": "node --inspect server.js",
-    "test": "echo add tests in the /test directory"
+    "test": "add tests in the /test directory"
   },
   "dependencies": {
     "express": "^4.17.1",
