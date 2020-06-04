@@ -49,11 +49,11 @@ const pino = require('pino')({
 });
 app.use(require('pino-http')({logger: pino}));
 
-app.use('/', require('./app')({
-  server: server,
-  app: app,
-  log: pino,
-}));
+app.get('/', (req, res) => {	
+  // Use req.log (a `pino` instance) to log JSON:	
+  req.log.info({message: 'Hello from Appsody!'});		
+  res.send('Hello from Appsody!');	
+});	
 
 app.get('*', (req, res) => {
   res.status(404).send("Not Found");

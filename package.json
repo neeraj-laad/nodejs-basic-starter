@@ -1,12 +1,12 @@
 {
-  "name": "nodejs-express-starter",
+  "name": "nodejs-basic-starter",
   "version": "0.1.0",
   "description": "Simple Node.js application",
   "license": "Apache-2.0",
   "scripts": {
     "start": "node server.js",
     "debug": "node --inspect server.js",
-    "test": "add tests in the /test directory"
+    "test": "echo add tests in a ./test directory"
   },
   "dependencies": {
     "express": "^4.17.1",
