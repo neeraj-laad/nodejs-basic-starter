@@ -51,8 +51,8 @@ app.use(require('pino-http')({logger: pino}));
 
 app.get('/', (req, res) => {	
   // Use req.log (a `pino` instance) to log JSON:	
-  req.log.info({message: 'Hello from Appsody!'});		
-  res.send('Hello from Appsody!');	
+  req.log.info({message: 'Hello from NodeJS Starter Application!'});		
+  res.send('Hello from NodeJS Starter Application!');	
 });	
 
 app.get('*', (req, res) => {
